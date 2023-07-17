@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(to top, rgb(52, 148, 230), rgb(236, 110, 173));
+    height: 100vh;
+}
+h1{
+    color: rgb(253, 159, 159);
+}
+
+.img img{
+    width: 100%;
+    height: 550px;
+}
+.formulaire{
+    background: linear-gradient(to top, rgb(0, 47, 88), rgb(0, 124, 224));
+    width: 35%;
+    height: 550px;
+    text-align: center;
+}
+.mere{
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 25px;
+}
+input{
+   border-left: 0;
+    outline: none;
+    border-bottom: 2px solid white;
+    border-top: 0;
+    background-color: transparent;
+    border-right: 0;
+    color: white;
+    width: 55%;
+}
+label{
+    float: left;
+    margin-left: 30px;
+}
+#price{
+    border: 0;
+}
+textarea{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+button{
+    background: linear-gradient( rgb(253, 159, 159), rgb(72, 28, 192));
+    padding: 15px 70px 15px 70px;
+    margin-left: -150px;
+    
+}
+#people{
+    border: 0;
+    width: 5%;
+    margin-right: 250px;
+}
+/* responcsive */
+
+@media screen and (max-width: 576px) {
+.mere{
+    display: flex;
+    flex-direction: column;
+    
+}
+    .formulaire{
+        width: 100%;
+    }
+}
+
+
+/* mode tab */
+@media screen and (max-width: 768px) {
+    .mere{
+        display: flex;
+        flex-direction: column-reverse
+        
+    }
+    .formulaire{
+        width: 100%;
+    }
+}
